@@ -1,13 +1,12 @@
-# Chip-ID file for H74x/H75x
+# Chip-ID file for H74x/H75x    // RM0433
 #
 chip_id 0x450
 description H74x/H75x
-flash_type 10
-flash_pagesize 0x20000
-sram_size 0x20000
-bootrom_base 0x1ff00000
-bootrom_size 0x20000
-option_base 0x5200201c
-option_size 0x2c
+flash_type 10                   // STM32H7 Flash Type
+flash_pagesize 0x20000          // 128k sector (p.147)
+sram_size 0x20000               // 128k "DTCM" from Table 7
+bootrom_base 0x1ff00000         // "System memory" starting address from Table 7
+bootrom_size 0x20000            // "System memory" byte size from Table 7
+option_base 0x5200201c          // STM32H7 Option Bytes Base
+option_size 0x2c                // FLASH_OPTSR_CUR to FLASH_BOOT_PRGR from Table 28
 flags dualbank swo
-

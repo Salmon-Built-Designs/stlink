@@ -1,13 +1,12 @@
-# Chip-ID file for H72x/H73x
+# Chip-ID file for H72x/H73x    // RM0468
 #
 chip_id 0x483
 description H72x/H73x
-flash_type 10
-flash_pagesize 0x20000
-sram_size 0x20000
-bootrom_base 0x1ff00000
-bootrom_size 0x20000
-option_base 0x5200201c
+flash_type 10                   // STM32H7 Flash Type
+flash_pagesize 0x20000          // 128k sector (p.152)
+sram_size 0x20000               // 128k "DTCM" (Figure 1)
+bootrom_base 0x1ff00000         // "System memory" starting address (Table 6)
+bootrom_size 0x20000            // "System memory" byte size (Table 6)
+option_base 0x5200201c          // STM32H7 Option Bytes Base
 option_size 0x2c
 flags swo
-

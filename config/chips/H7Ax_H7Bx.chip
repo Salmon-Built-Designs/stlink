@@ -1,13 +1,12 @@
-# Chip-ID file for H7Ax/H7Bx
+# Chip-ID file for H7Ax/H7Bx    // RM0455
 #
 chip_id 0x480
 description H7Ax/H7Bx
-flash_type 10
-flash_pagesize 0x2000
-sram_size 0x20000
-bootrom_base 0x1ff00000
-bootrom_size 0x20000
-option_base 0x5200201c
+flash_type 10                   // STM32H7 Flash Type
+flash_pagesize 0x2000           // 8k sector (p.146)
+sram_size 0x20000               // 128k "DTCM" (Figure 1)
+bootrom_base 0x1ff00000         // "System memory" starting address (Table 12-14)
+bootrom_size 0x20000            // "System memory" byte size splitted to two banks (Table 12-14)
+option_base 0x5200201c          // STM32H7 Option Bytes Base
 option_size 0x2c
 flags dualbank swo
-

@@ -10,4 +10,3 @@ bootrom_size 0x0
 option_base 0x0
 option_size 0x0
 flags none
-

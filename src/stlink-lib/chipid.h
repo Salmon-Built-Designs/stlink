@@ -74,9 +74,6 @@ enum stlink_stm32_chipids {
     STLINK_CHIPID_STM32_WLE              = 0x497
 };
 
-#define CHIP_F_HAS_DUAL_BANK    (1 << 0)
-#define CHIP_F_HAS_SWO_TRACING  (1 << 1)
-
 /** Chipid parameters */
 struct stlink_chipid_params {
     uint32_t chip_id;
